@@ -1,6 +1,7 @@
 {
-  "workbench.colorCustomizations": {
-    "titleBar.activeBackground": "#98ca3f",
-    "titleBar.inactiveBackground": "#98ca3f"
-  }
+  "eslint.enable": true,
+  "eslint.autoFixOnSave": true,
+  "javascript.format.enable": false,
+  // "prettier.printWidth": 100,
+  // "prettier.singleQuote": false
 }
