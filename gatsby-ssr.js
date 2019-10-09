@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/display-name */
 /**
  * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
  *
@@ -5,3 +7,14 @@
  */
 
 // You can delete this file if you're not using it
+const React = require('react')
+const Layout = require('./src/components/layout').default
+const { GlobalStyles } = require('./src/styles')
+const { CartProvider } = require('./src/context')
+
+exports.wrapRootElement = ({ element }) => (
+  <CartProvider>
+    <GlobalStyles />
+    <Layout>{element}</Layout>
+  </CartProvider>
+)
